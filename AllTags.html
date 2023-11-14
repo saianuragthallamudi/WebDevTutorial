@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is how we include external css sheet -->
+    <link rel="stylesheet" href="AllTags.html">
+    <!-- This is how we include external JS file-->
+    <script src="JavaScriptTut.js"></script>
+
+    <style>
+        #img_div{
+            border: 10px;
+            border-style: solid;
+            align-items: center;
+        }
+        #image{
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+        }
+    </style>
+    <title>HTML Tutorial</title>
+</head>
+<body>
+   <!-- Display Text on window -->
+   Welcome to HTML
+
+   <h1>This is a heading tag</h1> <!-- This is heading tag, we have headings from h1 to h6 which varies in size -->
+   <p>This is a paragraph tag</p>
+
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est eveniet porro excepturi et? A impedit modi debitis, eum labore quisquam possimus et porro voluptas harum quae veniam eveniet doloremque tenetur quas cum explicabo, animi fugit aliquid ipsam fuga iure unde. <br>This is line break tag</br></p>
+
+   <!-- These are anchor tags -->
+   <a href="https://www.google.com/" target="_blank">Google</a><br> 
+   <a href="https://www.linkedin.com/in/sai-anurag-thallamudi-ba0881189/" target="_blank">My LinkedIn</a><br><br>
+
+   <!-- This is a div tag -->
+   <div id="img_div">
+    <!-- Image Tags -->
+   <img src="/Photos/img_4.jpg" id ="image" alt="Error loading image">
+   <img src="/Photos/img_4.jpg" id ="image" alt="Error loading image">
+   <img src="/Photos/img_4.jpg" id ="image" alt="Error loading image">
+   <img src="/Photos/img_4.jpg" id ="image" alt="Error loading image">
+   </div>
+
+   <!-- List Tages -->
+   <!-- UL - unordered list -->
+   <h3>Unordered List with type as square</h3>
+   <ul type="square">
+    Unordered List
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+   </ul>
+
+   <h3>Ordered List with type as "A"</h3>
+   <ol type="A">
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+   </ol>
+
+   <!-- Table Tags -->
+   <h3>Table</h3>
+   <table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>Anurag</td>
+            <td>24</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Revanth</td>
+            <td>24</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Mouli</td>
+            <td>24</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>Santosh</td>
+            <td>24</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Sourav</td>
+            <td>24</td>
+            <td>Male</td>
+        </tr>
+       </tbody>
+   </table>
+
+   <!-- Form Tag -->
+   <h3>HTML Form</h3>
+   <form action="https://www.linkedin.com/in/sai-anurag-thallamudi-ba0881189/">
+    <div>
+        Name : <input type="text">
+    </div>
+    <div>
+        Age : <input type="text">
+    </div>
+    <div>
+        Email : <input type="email" value="">
+    </div>
+    <div>
+        Gender : Male<input type="radio" name="gender" id=""> Female<input type="radio" name="gender" id="">
+    </div>
+    <div>
+        <input type="date" name="" id="">
+    </div>
+    <div>
+        About Yourself <br><textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <label for="lang">Language:</label>
+        <select name="dropdown" id="lang">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="JS">JavaScript</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+    <div>
+       Click if you are you a robot<input type="checkbox" name="" id="">
+    </div>
+   </form>
+   <br><br> 
+
+   <!-- Inline And Block elements -->
+   <span>span -- This is inline tag</span>
+   <strong>strong -- This is inline tag</strong>
+   <a href="">a -- This is inline tag</a>
+   <div> div --This is block ele</div>
+   <p> p -- This is block ele</p>
+   <br>
+
+   <!-- id and class of elements -->
+   <h3>Class and Id</h3>
+   We generally use class and id for defining styling or css properties of those elements 
+   <div>
+    <h4>Id</h4>
+    <p>
+        All elements in a page should have unique ids, id is sort of name for an ele.
+    </p>
+    <h4>Class</h4>
+    <p>
+        We generally use class to give common properties for different elements. <br>
+        An element can have multiple classes, or mu;tiple elements can have same class.
+    </p>
+    <p>
+        . is for class, # is for id. Either in css or html
+    </p>
+   </div>
+
+   <!-- For creating multiple elements -->
+   <!-- p*4 -->
+   <p>item1</p>
+   <p>item2</p>
+   <p>item3</p>
+   <p>item4</p>
+
+
+   <!-- <script type>
+    let img = document.getElementById('image');
+    let imgs = ['img_1.jpg','img_2.jpg','img_3.jpg','img_4.jpg','img_5.jpg','img_6.jpg'];
+    setInterval(function(){
+        let random = Math.floor(Math.random() * 6);
+        img.src = '/Photos/'+imgs[random];
+        console.log(img.src);
+    },800)
+   </script> -->
+</body>
+</html>
